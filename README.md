@@ -2,7 +2,7 @@
 Customer Care Registry
 
 # Team Members
+  * MariSelvam S (Team Leader)
   * Anantha Krishnan P
   * Maharaja V
   * Manickavasagam A
-  * Mariselvam S
