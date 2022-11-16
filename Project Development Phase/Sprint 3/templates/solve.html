@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>agent complaint history</title>
+    <link rel="stylesheet" href="../static/admind.css">
+    <link rel="stylesheet" href="/static/userd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+    <body>
+      <div class="navigation">
+        <div class="toggle"></div>
+          <ul>
+              <li><a href="/agentpage">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Dashboard</span>
+                </a></li>
+              <li><a href="/agcomplainthist">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                 <span class="title">Complaint Details</span>
+                </a></li>
+              <li><a href="/loggout ">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                  <span class="title">logout</span>
+              </a></li>
+          </ul>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+          let navigation = document.querySelector('.navigation');
+          let toggle = document.querySelector('.toggle');
+          toggle.onclick = function(){
+            navigation.classList.toggle('active')
+          }
+        </script>
+        <center><span class="tab"  style="position: relative;
+        top: -250px;font-size: large;
+        left: -400px;
+        padding: 10px; width: 940px;
+        font-weight: bold; color: white;">{{a}}</span></center>
+        </body>
+        </html>
+        

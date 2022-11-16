@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>admin dashboard</title>
+    <link rel="stylesheet" href="/static/admind.css">
+    <link rel="stylesheet" href="/static/userd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+    <body>
+      <div class="navigation">
+        <div class="toggle"></div>
+          <ul>
+              <li><a href="/adminpage">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Dashboard</span>
+                </a></li>
+              <li><a href="/agentcreate">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                  <span class="title">Agent Creation</span>
+              </a></li>
+              <li><a href="/adcomplainthist">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                 <span class="title">Complaint History</span>
+                </a></li>
+              <li><a href="/loggout ">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                  <span class="title">logout</span>
+              </a></li>
+          </ul>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script>
+          let navigation = document.querySelector('.navigation');
+          let toggle = document.querySelector('.toggle');
+          toggle.onclick = function(){
+            navigation.classList.toggle('active')
+          }
+      </script>
+        <div class="vj">
+          <img src="/static/img9.png" alt="">
+        </div>
+         
+        <div class="wrapper">
+          <div class="cls">
+            <h1>WELCOME TO THE ADMIN DASHBOARD...</h1>
+        </div>
+    </body>
+</html>
