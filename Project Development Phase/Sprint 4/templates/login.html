@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>user login</title>
+	<link rel="shortcut icon" type="image/jpg" href="../static/img3.jpg">
+	<link href="../static/login.css" rel="stylesheet">
+	<link rel="stylesheet" href="../static/home.css"> 
+</head>
+<body>
+	<header>
+		
+		<div class="wrapper">
+			<div class="img">
+				<img src="/static/logo.png" alt="Global">
+				<p style="color: rgb(219, 211, 227); font-weight: bold; font-size: 24px;">Customer Care Registry</p>
+			</div>
+			<ul class="nav-area">
+				<li><a href="/">Home</a></li>
+				<li><a href="/agent">Agent Login</a></li>
+				<li><a href="/admin">Admin Login</a></li>
+				<li><a href="/login">User Login</a></li>
+				<li><a href="/registertemp">Register</a></li>
+				
+			</ul>
+		</div>	
+		<div class="contact-form">
+
+			<h2> User login</h2>
+			<form action="/logindata" method="POST">
+				<p>Username</p><input placeholder="Enter username" type="text" name="username">
+				<p>Password</p><input placeholder="Enter Password" type="password" name="password">
+				<span class="alert {{indicator}}">{{b}}</span>
+				<input type="submit" value="Sign in">
+			</form>
+			<div class="links">
+			<p>Not yet registered..?? <a href="/registertemp"> Click here</a></p>
+			</div>
+		</div>
+	</header>
+</body>
+</html>

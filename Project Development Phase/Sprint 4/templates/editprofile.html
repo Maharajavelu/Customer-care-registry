@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile Card </title>
+    <link rel="stylesheet" href="/static/profilestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <link rel="stylesheet" href="/static/userd.css">
+    <div class="navigation">
+        <div class="toggle"></div>
+          <ul>
+              <li><a href="/home">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Dashboard</span>
+                </a></li>
+              <li><a href="/profile">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                  <span class="title">Profile</span>
+              </a></li>
+              <li><a href="/addcomplaint">
+                <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                  <span class="title">Lodge Complaint</span>
+                </a></li>
+              <li><a href="/comphistory">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                 <span class="title">Complaint History</span>
+                </a></li>
+              <li><a href="/logout ">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                  <span class="title">logout</span>
+              </a></li>
+          </ul>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+          let navigation = document.querySelector('.navigation');
+          let toggle = document.querySelector('.toggle');
+          toggle.onclick = function(){
+            navigation.classList.toggle('active')
+          }
+        </script>
+        <div class="vj">
+          <img src="/static/img8.png" alt="">
+        </div>
+    
+  <div class="wrapper">
+    <form action="{{url_for('editprofile')}}" method="post" >
+     <div class="buttons"><br>
+        <p>firstName :</p><div class="form-row"><input type="text" id="firstname" name="firstname" placeholder="firstname"></div><br>
+        <p>LastName :</p><div class="form-row"><input type="text" id="lastname" name="lastname" placeholder="lastname"></div><br>
+        <p>Username :</p><div class="form-row"><input type="text" id="username" name="username" placeholder="username"></div><br>
+        <p>Email : </p><div class="form-row"><input type="email" id="email" name="email" placeholder="email"></div><br>
+        
+        <p>State :</p><div class="form-row"><input type="text" id="address" name="address" placeholder="address"></div><br>
+        <center><span>{{a}}</span></center>
+      
+        <button class="button-85" role="button">Save profile</button>
+       
+    </div>
+  </form>
+    
+    </div>
+  </div>
+</body>
+</html>

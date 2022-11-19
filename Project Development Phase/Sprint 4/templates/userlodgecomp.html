@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lodgecomplaint</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="/static/complaint.css"/>
+</head>
+<body class="form-v10">
+    <link rel="stylesheet" href="/static/userd.css">
+    <div class="navigation">
+        <div class="toggle"></div>
+          <ul>
+              <li><a href="/home">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Dashboard</span>
+                </a></li>
+              <li><a href="/profile">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                  <span class="title">Profile</span>
+              </a></li>
+              <li><a href="/addcomplaint">
+                <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                  <span class="title">Lodge Complaint</span>
+                </a></li>
+              <li><a href="/comphistory">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                 <span class="title">Complaint History</span>
+                </a></li>
+              <li><a href="/logout ">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                  <span class="title">logout</span>
+              </a></li>
+          </ul>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+          let navigation = document.querySelector('.navigation');
+          let toggle = document.querySelector('.toggle');
+          toggle.onclick = function(){
+            navigation.classList.toggle('active')
+          }
+        </script>
+         <div class="vj2">
+          <img src="/static/img1.png" alt="">
+        </div>
+        <div class="vj1">
+          <img src="/static/img2.png" alt="">
+        </div>
+    
+	<div class="page-content">
+			<form class="form-detail" action="#" method="post" id="myform">
+				<div class="form-left">
+					<h2 style="color: black;">Lodge Complaint</h2>
+					<div class="form-row-3">
+                        <div class="form-row name">
+                          <select name="selectcategory" required id="selectcategory">
+                                <option class="option" value="selectcategory">Select Category</option>
+                                <option class="option" value="E-commerce">E-commerce</option>
+                                <option class="option" value="General">General</option>
+                                <option class="option" value="Other">Other</option>
+                            </select>
+                        </div>	
+                        <div class="form-row name">
+                            <input type="date" name="dt" id="dt"> 
+                        </div>
+                       
+                            <div class="form-row name">
+                               
+                                <input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
+                            </div>
+                            
+                            <div class="form-row name">
+                                <select name="state" id="state">
+                                    <option value="state">District</option>
+                                    <option value="Tirunelveli">Tirunelveli</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Madurai">Madurai</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-row name">
+                                <input type="text" name="email" id="email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="email">
+                            </div> 
+                                
+                            
+					</div>
+				</div>
+				<div class="form-right">
+					<h2>Complaint Details</h2>
+					<div class="wrapper">
+						<textarea  rows="15" cols="60" placeholder="Enter the complaint details" name="complaint" required id="complaint"></textarea>
+					</div>
+          <span class="text"style="color: black;font-weight:bold;">{{a}}</span>
+					
+					<div class="form-row-last">
+                        <button class="button-85" role="button">Register Complaint</button>
+					</div>
+				</div>
+			</form>
+     
+		</div>
+	</div>
+ 
+</body>
+</html>

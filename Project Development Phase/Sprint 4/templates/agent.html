@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agent login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link href="/static/agent.css" rel="stylesheet">
+	
+</head>
+<body>
+		<div class="rj">
+			<div class="img">
+				<img src="/static/logo.png" alt="Global">
+				<p style="color: rgb(219, 211, 227); font-weight: bold; font-size: 24px;">Customer Care Registry</p>
+			</div>
+			<ul class="nav-area">
+				<li><a href="/">Home</a></li>
+				<li><a href="/agent">Agent Login</a></li>
+				<li><a href="/admin">Admin Login</a></li>
+				<li><a href="/login">User Login</a></li>
+				<li><a href="/registertemp">Register</a></li>
+			</ul>
+		</div>
+		<div class="form">
+			<h2> Agent login</h2>
+			<form action="/agentlogin" method="POST">
+				<p>Username</p><input placeholder="Enter your name" type="text" name='username'>
+				<p>Password</p><input placeholder="Enter password" type="password" name='password'> 
+				<input type="submit" value="Sign in">
+			</form>
+			<!-- <div class="links">
+			<p>click here for dashboard <a href="/adminpage"> Click here</a></p>
+		</div>
+			{{a}}
+		</div> -->
+		
+</body>
+</html> 
