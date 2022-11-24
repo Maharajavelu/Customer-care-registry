@@ -7,7 +7,7 @@ Customer Care Registry
   * Maharaja V
   * Manickavasagam A
 
-# Our Website IP Address
+# Website IP Address
   * http://159.122.177.141:32498/
  
 # Demo Video Link
